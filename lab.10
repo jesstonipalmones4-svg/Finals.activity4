@@ -1,0 +1,16 @@
+<?php
+$correct_username = "admin";
+$correct_password = "1234";
+
+echo "Enter username: ";
+$username = readline();
+
+echo "Enter password: ";
+$password = readline();
+
+if ($username === $correct_username && $password === $correct_password) {
+    echo "Login successful! Welcome, admin.\n";
+} else {
+    echo "Login failed. Invalid username or password.\n";
+}
+?>

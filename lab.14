@@ -1,0 +1,25 @@
+<?php
+echo "=== MENU ===\n";
+echo "1 = Add\n";
+echo "2 = Edit\n";
+echo "3 = Delete\n";
+echo "============\n";
+
+echo "Enter your choice (1-3): ";
+$choice = (int)readline();
+
+switch ($choice) {
+    case 1:
+        echo "Action Selected: Add\n";
+        break;
+    case 2:
+        echo "Action Selected: Edit\n";
+        break;
+    case 3:
+        echo "Action Selected: Delete\n";
+        break;
+    default:
+        echo "Invalid choice! Please select 1, 2, or 3.\n";
+        break;
+}
+?>

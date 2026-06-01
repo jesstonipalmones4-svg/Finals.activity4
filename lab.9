@@ -1,0 +1,23 @@
+<?php
+// Input purchase amount
+echo "Enter purchase amount: ";
+$amount = (float)readline();
+
+// Determine discount rate
+if ($amount >= 1000) {
+    $discount = 0.20; // 20% discount
+} elseif ($amount >= 500) {
+    $discount = 0.10; // 10% discount
+} else {
+    $discount = 0.00; // No discount
+}
+
+// Calculate the final price
+$discount_amount = $amount * $discount;
+$final_price = $amount - $discount_amount;
+
+// Display results
+echo "Original Price: " . $amount . "\n";
+echo "Discount Given: " . ($discount * 100) . "%\n";
+echo "Final Price: " . $final_price . "\n";
+?>

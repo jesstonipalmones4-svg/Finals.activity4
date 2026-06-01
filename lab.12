@@ -1,0 +1,28 @@
+<?php
+echo "Enter a letter grade (A, B, C, D, F): ";
+
+$grade = readline();
+
+$grade = strtoupper($grade);
+
+switch ($grade) {
+    case 'A':
+        echo "Excellent\n";
+        break;
+    case 'B':
+        echo "Good\n";
+        break;
+    case 'C':
+        echo "Average\n";
+        break;
+    case 'D':
+        echo "Poor\n";
+        break;
+    case 'F':
+        echo "Failed\n";
+        break;
+    default:
+        echo "Invalid grade entered!\n";
+        break;
+}
+?>

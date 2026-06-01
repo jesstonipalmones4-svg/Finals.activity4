@@ -1,0 +1,15 @@
+<?php
+// Create a fixed password
+$correct_password = "admin123";
+
+// Ask the user for input
+echo "Enter password: ";
+$user_input = readline();
+
+// Compare the input with the fixed password
+if ($user_input === $correct_password) {
+    echo "Access Granted\n";
+} else {
+    echo "Access Denied\n";
+}
+?>

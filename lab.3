@@ -1,0 +1,16 @@
+<?php
+// Ask user to input the student's grade
+echo "Enter the student's grade: ";
+$grade = (float)readline();
+
+// Handle multiple grade conditions
+if ($grade >= 90 && $grade <= 100) {
+    echo "Excellent\n";
+} elseif ($grade >= 80 && $grade < 90) {
+    echo "Good\n";
+} elseif ($grade >= 70 && $grade < 80) {
+    echo "Average\n";
+} else {
+    echo "Failed\n";
+}
+?>

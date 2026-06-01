@@ -1,0 +1,12 @@
+<?php
+// Ask the user to input a year
+echo "Enter a year: ";
+$year = (int)readline();
+
+// Check the leap year rules using logical operators
+if (($year % 4 === 0 && $year % 100 !== 0) || ($year % 400 === 0)) {
+    echo "$year is a Leap Year\n";
+} else {
+    echo "$year is not a Leap Year\n";
+}
+?>

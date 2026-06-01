@@ -1,0 +1,20 @@
+<?php
+// Input age
+echo "Enter age: ";
+$age = (int)readline();
+
+// Input citizenship
+echo "Enter citizenship: ";
+$citizenship = readline();
+
+if ($age >= 18) {
+    // Inner condition (Nested): Check citizenship
+    if (strcasecmp($citizenship, "Filipino") === 0) {
+        echo "Eligible to vote\n";
+    } else {
+        echo "Not eligible to vote (Must be a Filipino citizen)\n";
+    }
+} else {
+    echo "Not eligible to vote (Must be 18 or older)\n";
+}
+?>
